@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shake Parallax Effect</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .parallax-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      overflow: hidden;
+    }
+    .background-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%; /* Трохи більше, ніж екран, для плавного ефекту */
+      height: auto;
+      transition: transform 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-container">
+    <img 
+      src="https://via.placeholder.com/1920x1080" 
+      alt="Background Image" 
+      class="background-image"
+      id="parallaxImage"
+    >
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
